@@ -20,8 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.google.android.gms.measurement.AppMeasurement$OnEventListener {*;}
--keep class com.google.android.gms.measurement.AppMeasurement {
-static com.google.android.gms.measurement.AppMeasurement getInstance(android.content.Context, java.lang.String, java.lang.String);
-void registerOnMeasurementEventListener(com.google.android.gms.measurement.AppMeasurement$OnEventListener);
-}
+-keep class com.google.android.gms.measurement.AppMeasurement$* { *; }
